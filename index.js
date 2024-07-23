@@ -59,7 +59,7 @@ function mostrarStats() {
     timeTotal.innerHTML = "Tiempo total: " + tiempoTotal;
     correctas.innerHTML = "Respuestas correctas: " + respuestasCorrectas;
     contestadas.innerHTML = "Preguntas contestadas: " + preguntasContestadas;
-    promedio.innerHTML = "Promedio de tiempo: " + (tiempoTotal / preguntasContestadas);
+    promedio.innerHTML = "Promedio de tiempo: " + Math.round(tiempoTotal / preguntasContestadas);
 }
 async function comenzar() {
     comienza.style.display = "none"
