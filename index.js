@@ -5,6 +5,7 @@ const palabra = document.querySelector("#palabra"),
     timeTotal = document.querySelector("#tiempoTotal"),
     correctas = document.querySelector("#respuestasCorrectas"),
     contestadas = document.querySelector("#preguntasContestadas");
+    promedio = document.querySelector("#promedio");
 let data,
     currentObject = {},
     respuestasCorrectas = 0,
@@ -58,6 +59,7 @@ function mostrarStats() {
     timeTotal.innerHTML = "Tiempo total: " + tiempoTotal;
     correctas.innerHTML = "Respuestas correctas: " + respuestasCorrectas;
     contestadas.innerHTML = "Preguntas contestadas: " + preguntasContestadas;
+    promedio.innerHTML = "Promedio de tiempo: " + (tiempoTotal / preguntasContestadas);
 }
 async function comenzar() {
     comienza.style.display = "none"
